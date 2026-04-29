@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Water's Edge Plumbing & Heating — Honest, reliable plumbing and heating service for the South Shore of Massachusetts. Owner Jon Harght. Call (732) 644-9700.">
+  <title>Water's Edge Plumbing & Heating | South Shore Massachusetts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ══════════ HEADER ══════════ -->
+<header>
+  <div class="header-top">
+    <span>Cell: <a href="tel:7326449700">(732) 644-9700</a></span>
+    <span>Email: <a href="mailto:info@watersedgeplumbandheat.com">info@watersedgeplumbandheat.com</a></span>
+    <span>📞 Call Us Now &mdash; 24/7 Emergency Service</span>
+  </div>
+  <div class="header-main">
+    <div class="logo" onclick="showPage('home')">
+      <img src="assets/images/logo.jpg" alt="Water's Edge Plumbing & Heating">
+    </div>
+    <nav>
+      <a href="#" class="active" id="nav-home" onclick="showPage('home'); return false;">Home</a>
+      <a href="#" id="nav-about" onclick="showPage('about'); return false;">About</a>
+      <a href="#" id="nav-services" onclick="showPage('services'); return false;">Services</a>
+      <a href="#" id="nav-contact" onclick="showPage('home'); setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100); return false;">Contact</a>
+      <a href="tel:7326449700" class="nav-cta">Call Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════ HOME PAGE ══════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Serving the South Shore Since 1998</div>
+      <h1>Honest Plumbing,<br><em>Right When You Need It.</em></h1>
+      <p class="hero-sub">From Marshfield to Plymouth, Water's Edge Plumbing & Heating delivers expert residential and commercial plumbing with the reliability your home deserves.</p>
+      <div class="hero-actions">
+        <a href="tel:7326449700" class="btn-primary">Call (732) 644-9700</a>
+        <a href="#" class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'}); return false;">Get a Free Estimate</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-bar-inner">
+      <div class="trust-item"><span class="dot">✦</span> Master Plumber Licensed</div>
+      <div class="trust-item"><span class="dot">✦</span> 25+ Years Experience</div>
+      <div class="trust-item"><span class="dot">✦</span> 24 / 7 Emergency Service</div>
+      <div class="trust-item"><span class="dot">✦</span> Free Estimates</div>
+      <div class="trust-item"><span class="dot">✦</span> Fully Insured</div>
+    </div>
+  </div>
+
+  <!-- Welcome -->
+  <section>
+    <div class="section-inner">
+      <div class="welcome-grid">
+        <div>
+          <div class="section-label">Welcome to Water's Edge</div>
+          <h2 class="section-title">South Shore's Trusted Plumbing Professionals</h2>
+          <p class="section-body">Water's Edge Plumbing & Heating has been providing outstanding plumbing and heating service to the South Shore since 1998. We take pride in being the best when it comes to all types of plumbing repairs, service, and installation. Whether it's a simple repair or a complete commercial installation, our customers' satisfaction is always priority one.</p>
+          <br>
+          <p class="section-body">Our experienced, licensed plumbers always provide personal, friendly service — because we're your neighbors, not a call center.</p>
+          <br>
+          <a href="#" class="btn-primary" onclick="showPage('about'); return false;">Meet the Team</a>
+        </div>
+        <div class="welcome-photo">
+          <div class="welcome-photo-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="20" width="48" height="32" rx="3" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+              <path d="M20 20V14C20 11.8 21.8 10 24 10H40C42.2 10 44 11.8 44 14V20" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+              <circle cx="32" cy="36" r="6" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+            </svg>
+            <p>Company Photo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="services-section">
+    <div class="section-inner">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+          </div>
+          <h3>Water Heater Repair & Installation</h3>
+          <p>Tank and tankless systems. We help you choose the right model and install it right the first time.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+          </div>
+          <h3>Boiler Repair & Installation</h3>
+          <p>Emergency heating repairs including radiators and boilers. Fast, professional service to keep you warm.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M7 14c0 1.1.9 2 2 2s2-.9 2-2V6H7v8zm5-12H7C5.9 2 5 2.9 5 4v10c0 2.76 2.24 5 5 5s5-2.24 5-5V6h-3V2z"/></svg>
+          </div>
+          <h3>Bathroom Renovation</h3>
+          <p>Complete bath plumbing for renovations. From rough-in to finish, we make your vision come to life.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M18 2H6C4.9 2 4 2.9 4 4v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-6 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm6-5H6V4h12v11z"/></svg>
+          </div>
+          <h3>Kitchen Renovation</h3>
+          <p>Relocating appliances, adding fixtures, or opening up your space — we handle all the plumbing.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4c1.4 0 2.8.5 3.86 1.57L7.57 15.07C6.5 14 6 12.6 6 11.2V7l6-2zm0 14c-3.75-1.1-6.5-4.67-6.96-8.4l9.53-9.53C15.96 2.55 18 6.63 18 11.2v.3c-.27 4.36-3.18 7.77-6 8.5z"/></svg>
+          </div>
+          <h3>Leak & Clog Troubleshooting</h3>
+          <p>Sinks, toilets, faucets, bathtubs, sewer pipes — we find the problem and fix it fast.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c9-3 6-17 6-17-1 2-2 3.5-4 5l-1.14-1.14C9 5.35 12.14 2 17 2c0 0-2 4-2 6 1 0 2-2 2-2z"/></svg>
+          </div>
+          <h3>Water & Gas Meters</h3>
+          <p>New construction or system upgrades — licensed installation of water and gas meters and piping.</p>
+        </div>
+
+      </div>
+      <div style="margin-top:32px;">
+        <a href="#" class="btn-primary" onclick="showPage('services'); return false;">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Band -->
+  <div class="emergency-band">
+    <div class="emergency-inner">
+      <div class="emergency-text">
+        <h2>24/7 Emergency Plumbing</h2>
+        <p>Our expert team is available around the clock, 365 days a year. When you have a crisis, we respond promptly and competently.</p>
+      </div>
+      <a href="tel:7326449700" class="btn-primary" style="white-space:nowrap;">Call (732) 644-9700</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-inner">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-grid">
+
+        <div>
+          <div class="contact-info-item">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value"><a href="tel:7326449700">(732) 644-9700</a></span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value"><a href="mailto:info@watersedgeplumbandheat.com">info@watersedgeplumbandheat.com</a></span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-label">Address</span>
+            <span class="contact-value">Marshfield, MA 02050</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-label">Master Plumber License</span>
+            <span class="contact-value">Massachusetts License #16017-PL-M</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-label">Hours</span>
+            <span class="contact-value">Mon–Fri 7am–5pm<br>24/7 Emergency Available</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="contact-form">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Smith">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="(732) 555-0000">
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Tell us about your plumbing needs..."></textarea>
+            </div>
+            <button class="btn-primary" onclick="submitForm()" style="align-self:flex-start;">Send Message</button>
+            <div class="form-success" id="form-success">✓ Message received! We'll be in touch shortly.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps?q=Marshfield,+MA+02050&output=embed"
+          width="100%"
+          height="360"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Water's Edge Plumbing & Heating — Marshfield, MA">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Area Ribbon -->
+  <div class="area-ribbon">
+    <p><strong>Serving the South Shore</strong><br>
+    Marshfield &nbsp;|&nbsp; Duxbury &nbsp;|&nbsp; Plymouth &nbsp;|&nbsp; Scituate &nbsp;|&nbsp; Norwell &nbsp;|&nbsp; Hanover &nbsp;|&nbsp; Pembroke &nbsp;|&nbsp; Kingston &nbsp;|&nbsp; Green Harbor &nbsp;|&nbsp; and surrounding communities</p>
+  </div>
+
+</div><!-- /page-home -->
+
+
+<!-- ══════════ ABOUT PAGE ══════════ -->
+<div id="page-about" class="page">
+
+  <div class="about-hero">
+    <h1>About Water's Edge Plumbing & Heating</h1>
+    <p>Owner-operated, community-rooted, and proud to serve the South Shore for over 25 years.</p>
+  </div>
+
+  <section>
+    <div class="section-inner about-content">
+      <div class="about-grid">
+        <div class="about-photo">
+          <!-- Replace with a real team/owner photo: <img src="assets/images/team.jpg" alt="Jon Harght - Owner"> -->
+          [Owner / Team Photo]
+        </div>
+        <div class="about-text">
+          <p>Water's Edge Plumbing & Heating was founded by Jon Harght on a simple belief: every homeowner deserves an honest plumber they can trust. Owner-operated since our founding, you can count on Jon to personally service your home or business with the care it deserves.</p>
+          <p>Locally owned and rooted in Marshfield, we've been serving Plymouth and Norfolk County's residential and commercial plumbing needs since 1998. Our reputation for honesty, reliability, and quality work at competitive prices is something we guard fiercely — it's why our customers keep calling us back and referring their neighbors.</p>
+          <p>Our team of licensed plumbing professionals is ready to tackle anything from your smallest repair to your largest project. We service the South Shore from Scituate to Plymouth and everywhere in between. Our workmanship meets the highest Massachusetts standards, and we use the brand-name products you can trust — from practical to premium lines.</p>
+          <p>When you call Water's Edge, you're not calling a 1-800 number. You're calling your neighbor.</p>
+
+          <div class="license-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#1e3a5f"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            <span>Massachusetts Master Plumber License <strong>#16017-PL-M</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="section-label">Our Values</div>
+      <h2 class="section-title">What Sets Us Apart</h2>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <h3>Honesty First</h3>
+          <p>We give you a straight assessment of what needs to be done, and we never recommend work you don't need. Our reputation depends on your trust.</p>
+        </div>
+        <div class="value-card">
+          <h3>Personal Service</h3>
+          <p>As an owner-operated company, you get the personal attention of someone who genuinely cares about the outcome — not a rotating cast of strangers.</p>
+        </div>
+        <div class="value-card">
+          <h3>Competitive Pricing</h3>
+          <p>Quality plumbing shouldn't cost a fortune. We offer fair, transparent pricing with free estimates and no surprise charges.</p>
+        </div>
+        <div class="value-card">
+          <h3>Reliability</h3>
+          <p>We show up when we say we will. We do what we say we'll do. That's it.</p>
+        </div>
+        <div class="value-card">
+          <h3>Licensed & Insured</h3>
+          <p>Fully licensed Massachusetts Master Plumbers, fully insured. Your home is protected when we're on the job.</p>
+        </div>
+        <div class="value-card">
+          <h3>Community Roots</h3>
+          <p>We live here, work here, and raise our families here on the South Shore. This community is our community.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="emergency-band">
+    <div class="emergency-inner">
+      <div class="emergency-text">
+        <h2>Ready to Help</h2>
+        <p>Call us any time — day or night — for emergency service or to schedule your free estimate.</p>
+      </div>
+      <a href="tel:7326449700" class="btn-primary">Call (732) 644-9700</a>
+    </div>
+  </div>
+
+  <div class="area-ribbon">
+    <p><strong>Serving the South Shore</strong><br>
+    Marshfield &nbsp;|&nbsp; Duxbury &nbsp;|&nbsp; Plymouth &nbsp;|&nbsp; Scituate &nbsp;|&nbsp; Norwell &nbsp;|&nbsp; Hanover &nbsp;|&nbsp; Pembroke &nbsp;|&nbsp; Kingston &nbsp;|&nbsp; Green Harbor &nbsp;|&nbsp; and surrounding communities</p>
+  </div>
+
+</div><!-- /page-about -->
+
+
+<!-- ══════════ SERVICES PAGE ══════════ -->
+<div id="page-services" class="page">
+
+  <div class="services-hero">
+    <h1>Our Services</h1>
+    <p>From routine maintenance to full system installations, Water's Edge handles every job with care and expertise.</p>
+  </div>
+
+  <section>
+    <div class="section-inner services-full">
+
+      <div class="service-full-item">
+        <div class="service-num">01</div>
+        <div>
+          <h3>Water Heater Repair & Installation</h3>
+          <p>There are many water heater options available to homeowners today — tank, tankless, heat pump, and solar. Water's Edge Plumbing & Heating can help you decide which model will best meet your family's needs, then install it correctly and efficiently. We service all major brands.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">02</div>
+        <div>
+          <h3>Boiler Repair & Installation</h3>
+          <p>From emergency heating system repairs — including radiators and boilers — to new furnace installation, call Water's Edge for fast and professional service to ensure your comfort. We understand how critical heat is during New England winters.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">03</div>
+        <div>
+          <h3>Bathroom Renovation</h3>
+          <p>When you're ready to give your bathroom an update, call Water's Edge Plumbing & Heating. We handle all the plumbing for complete renovations — from rough-in plumbing for new layouts to fixture installation that gives your bath a spa-like feel.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">04</div>
+        <div>
+          <h3>Kitchen Renovation</h3>
+          <p>Open-concept living often requires renovating the kitchen — moving plumbing and appliances to better meet your family's needs. We coordinate with your contractor to make sure every pipe, drain, and gas line is exactly where it needs to be.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">05</div>
+        <div>
+          <h3>Water & Gas Meters</h3>
+          <p>Building a new house or upgrading your system? Call Water's Edge to install new gas and water meters and run your water and gas pipes to code. We work closely with municipal inspectors to ensure a smooth approval process.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">06</div>
+        <div>
+          <h3>Solar Water Heaters & Pool Heaters</h3>
+          <p>Solar hot water systems are environmentally friendly and can be installed to blend seamlessly with your home's architecture. We also install and service pool heaters to extend your swimming season here on the South Shore.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">07</div>
+        <div>
+          <h3>Troubleshooting Leaks & Clogs</h3>
+          <p>Got leaks or clogs in sinks, toilets, faucets, bathtubs, or sewer pipes? Call Water's Edge to keep everything running smoothly. We use the latest diagnostic tools to find the problem fast and fix it right.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">08</div>
+        <div>
+          <h3>Repair / Replace / Install Plumbing Fixtures</h3>
+          <p>If all you need is a new fixture, we do that too. From faucets to tubs, sinks to toilets — we'll get you exactly what you need, properly installed. We work with all brands from budget-friendly to designer lines.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">09</div>
+        <div>
+          <h3>Water Piping Repair & Installation</h3>
+          <p>Older homes on the South Shore often have aging pipe systems that need attention. Whether it's a pinhole leak or a full repipe, our team handles copper, PVC, PEX, and other pipe systems with precision.</p>
+        </div>
+      </div>
+
+      <div class="service-full-item">
+        <div class="service-num">10</div>
+        <div>
+          <h3>24/7 Emergency Service</h3>
+          <p>Our expert emergency maintenance team is available 24 hours a day, 7 days a week, 365 days a year to attend to your problems promptly and competently. Because plumbing emergencies don't wait for business hours.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="emergency-band">
+    <div class="emergency-inner">
+      <div class="emergency-text">
+        <h2>Call for a Free Estimate</h2>
+        <p>Not sure what you need? Give us a call and we'll talk you through it — no obligation, no pressure.</p>
+      </div>
+      <a href="tel:7326449700" class="btn-primary">Call (732) 644-9700</a>
+    </div>
+  </div>
+
+  <div class="area-ribbon">
+    <p><strong>Serving the South Shore</strong><br>
+    Marshfield &nbsp;|&nbsp; Duxbury &nbsp;|&nbsp; Plymouth &nbsp;|&nbsp; Scituate &nbsp;|&nbsp; Norwell &nbsp;|&nbsp; Hanover &nbsp;|&nbsp; Pembroke &nbsp;|&nbsp; Kingston &nbsp;|&nbsp; Green Harbor &nbsp;|&nbsp; and surrounding communities</p>
+  </div>
+
+</div><!-- /page-services -->
+
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">Water's Edge Plumbing & Heating</div>
+        <p>Honest, reliable plumbing and heating service for the South Shore of Massachusetts since 1998. Owner-operated and community-rooted.</p>
+        <br>
+        <p style="color:rgba(255,255,255,0.5); font-size:0.78rem;">Licensed &amp; Insured<br>MA Master Plumber #16017-PL-M</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <a href="#" onclick="showPage('about'); return false;">About Us</a>
+        <a href="#" onclick="showPage('services'); return false;">Services</a>
+        <a href="#" onclick="showPage('home'); setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100); return false;">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:7326449700">(732) 644-9700</a>
+        <a href="mailto:info@watersedgeplumbandheat.com">info@watersedgeplumbandheat.com</a>
+        <p>Marshfield, MA 02050</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Water's Edge Plumbing & Heating. All rights reserved.</p>
+      <p>Serving Marshfield, Duxbury, Plymouth, Scituate &amp; the South Shore</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
