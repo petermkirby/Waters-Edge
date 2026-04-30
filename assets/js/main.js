@@ -45,8 +45,8 @@ function submitForm(btn) {
       setTimeout(() => { success.style.display = 'none'; }, 6000);
     })
     .catch((err) => {
-      console.error('EmailJS error:', err);
-      alert('Sorry, something went wrong. Please call us at (732) 644-9700.');
+      console.error('EmailJS error:', JSON.stringify(err));
+      alert('EmailJS error ' + (err.status || '') + ': ' + (err.text || JSON.stringify(err)));
     })
     .finally(() => {
       btn.disabled = false;
