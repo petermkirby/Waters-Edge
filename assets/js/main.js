@@ -37,13 +37,14 @@ function submitForm(btn) {
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body:    JSON.stringify(data),
   })
-    .then(res => {
-      if (res.ok) {
+    .then(res => res.json().then(body => ({ status: res.status, body })))
+    .then(({ status, body }) => {
+      if (status === 200 || body.ok) {
         success.style.display = 'block';
         form.reset();
         setTimeout(() => { success.style.display = 'none'; }, 6000);
       } else {
-        return res.json().then(body => { throw new Error(body.error || 'Unknown error'); });
+        throw new Error(body.error || 'Status ' + status);
       }
     })
     .catch(err => {
