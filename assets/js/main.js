@@ -44,7 +44,7 @@ function submitForm(btn) {
     .then(({ status, body }) => {
       if (status === 200 || body.ok) {
         success.style.display = 'block';
-        form.reset();
+        form.querySelectorAll('input, textarea').forEach(el => el.value = '');
         setTimeout(() => { success.style.display = 'none'; }, 6000);
       } else {
         throw new Error(body.error || 'Status ' + status);
