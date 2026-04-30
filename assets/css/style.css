@@ -315,6 +315,13 @@
     position: relative;
   }
 
+  .welcome-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
   .welcome-photo-placeholder {
     text-align: center;
     color: rgba(255,255,255,0.4);
@@ -658,9 +665,10 @@
   }
 
   .about-photo {
-    aspect-ratio: 3/4;
+    aspect-ratio: 4/3;
     background: linear-gradient(160deg, var(--seafoam) 0%, var(--navy) 100%);
     border-radius: 4px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -670,6 +678,13 @@
     text-transform: uppercase;
     text-align: center;
     padding: 20px;
+  }
+
+  .about-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .about-text p {
