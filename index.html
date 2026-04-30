@@ -193,21 +193,21 @@
           <div class="contact-form">
             <div class="form-group">
               <label>Your Name</label>
-              <input type="text" placeholder="John Smith">
+              <input type="text" name="from_name" placeholder="John Smith" required>
             </div>
             <div class="form-group">
               <label>Phone Number</label>
-              <input type="tel" placeholder="(732) 555-0000">
+              <input type="tel" name="phone" placeholder="(732) 555-0000">
             </div>
             <div class="form-group">
               <label>Email</label>
-              <input type="email" placeholder="john@example.com">
+              <input type="email" name="from_email" placeholder="john@example.com" required>
             </div>
             <div class="form-group">
               <label>Message</label>
-              <textarea placeholder="Tell us about your plumbing needs..."></textarea>
+              <textarea name="message" placeholder="Tell us about your plumbing needs..."></textarea>
             </div>
-            <button class="btn-primary" onclick="submitForm()" style="align-self:flex-start;">Send Message</button>
+            <button class="btn-primary" onclick="submitForm(this)" style="align-self:flex-start;">Send Message</button>
             <div class="form-success" id="form-success">✓ Message received! We'll be in touch shortly.</div>
           </div>
         </div>
@@ -463,6 +463,7 @@
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
