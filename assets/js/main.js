@@ -37,7 +37,10 @@ function submitForm(btn) {
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
     body:    JSON.stringify(data),
   })
-    .then(res => res.json().then(body => ({ status: res.status, body })))
+    .then(res => res.json().then(body => {
+      console.log('Formspree status:', res.status, 'body:', JSON.stringify(body));
+      return { status: res.status, body };
+    }))
     .then(({ status, body }) => {
       if (status === 200 || body.ok) {
         success.style.display = 'block';
@@ -48,8 +51,8 @@ function submitForm(btn) {
       }
     })
     .catch(err => {
-      console.error('Formspree error:', err);
-      alert('Sorry, something went wrong. Please call us at (732) 644-9700.');
+      console.error('Formspree error:', err.message);
+      alert('Formspree error: ' + err.message);
     })
     .finally(() => {
       btn.disabled = false;
